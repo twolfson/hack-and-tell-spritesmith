@@ -120,73 +120,57 @@
 				</section>
 
 				<section>
-					<h2>Approach</h2>
-					<p>
-						During my initial research, I found two node modules which would suit my needs:
-					</p>
-					<ul>
-						<li><a href="https://github.com/aheckmann/gm">gm</a>, a wrapper for <a href="http://www.graphicsmagick.org/">GraphicsMagick</a></li>
-						<li><a href="https://github.com/LearnBoost/node-canvas">node-canvas</a>, a node.js implementation of <a href="https://developer.mozilla.org/en-US/docs/HTML/Canvas">&lt;canvas&gt;</a> which utilizes <a href="http://cairographics.org/">Cairo</a>
-					</ul>
-					<p>
-						<img src="img/graphics_magick.png" alt="GraphicsMagick logo"/>
-						<img src="img/cairo.png" alt="Cairo logo"/>
-					</p>
-
-					<aside class="notes">
-						`gm` would handle Windows as it available as an `.exe`.
-						<br/>
-						`node-canvas` would handle Unix as it compiles when installed via `npm`.
-					</aside>
-				</section>
-
-				<section>
-					<section data-state="alert">
-						<h2>Global State</h2>
+					<section>
+						<h2>Approach</h2>
 						<p>
-							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-							will be added as a class to the document element when the slide is open. This lets you
-							apply broader style changes, like switching the background.
+							During my initial research, I found two node modules which would suit my needs:
 						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<ul>
+							<li><a href="https://github.com/aheckmann/gm">gm</a>, a wrapper for <a href="http://www.graphicsmagick.org/">GraphicsMagick</a></li>
+							<li><a href="https://github.com/LearnBoost/node-canvas">node-canvas</a>, a node.js implementation of <a href="https://developer.mozilla.org/en-US/docs/HTML/Canvas">&lt;canvas&gt;</a> which utilizes <a href="http://cairographics.org/">Cairo</a>
+						</ul>
+						<p>
+							<img src="img/graphics_magick.png" alt="GraphicsMagick logo"/>
+							<img src="img/cairo.png" alt="Cairo logo"/>
+						</p>
+
+						<aside class="notes">
+							`gm` would handle Windows as it available as an `.exe`.
+							<br/>
+							`node-canvas` would handle Unix as it compiles when installed via `npm`.
+						</aside>
 					</section>
-					<section data-state="blackout">
-						<h2>"blackout"</h2>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+					<section>
+						<h2>Solving</h2>
+						<p>
+							gm was the harder of the 2 engines; it required &quot;trial and error&quot; to get transparency working.
+						</p>
+						<p>
+							In the end, it all came together and we were making sprites =D
+						</p>
 					</section>
-					<section data-state="soothe">
-						<h2>"soothe"</h2>
-						<a href="#" class="image navigate-next">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
-						</a>
+					<section>
+						<h2>Going beyond</h2>
+						<p>
+							The next step was to write a <a href="http://gruntjs.com/">grunt</a> wrapper and call it a day.
+						</p>
+						<p>
+							However, I pondered modularity and if/where I could draw lines.
+						</p>
+						<p>&nbsp;</p>
+						<p>
+							I wound up writing <strong>5</strong> modules and am considering even more.
+						</p>
+						<p>
+							<a href="https://github.com/Ensighten/grunt-spritesmith">grunt-spritesmith</a>, <a href="https://github.com/Ensighten/spritesmith">spritesmith</a>, <a href="https://github.com/twolfson/layout">layout</a>
+							<br/>
+							<a href="https://github.com/twolfson/json2css">json2css</a>, <a href="http://github.com/twolfson/json-content-demux">json-content-demux</a>
+						</p>
 					</section>
 				</section>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
 
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
 				</section>
 
 				<section>
