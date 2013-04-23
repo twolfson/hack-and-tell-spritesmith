@@ -2,11 +2,16 @@
 
 Hack and Tell presentation for Spritesmith
 
+http://twolfson.github.io/hack-and-tell-spritesmith/
+
 ## Presentation
 
 The presentation is hosted on [GitHub pages][gh-pages] at
 
-It is written on top of [reveal.js].
+It is written on top of [reveal.js][reveal.js].
+
+[gh-pages]: http://twolfson.github.io/hack-and-tell-spritesmith
+[reveal.js]: http://lab.hakim.se/reveal-js/
 
 Here are the links inside of the presentation in the order they appear
 
