@@ -34,6 +34,7 @@ grunt-spritesmith, spritesmith, layout, json2css, json-content-demux
 Current state
 - Wrote up a phantomjs engine since then to lower barrier to entry
 - Still looking for a hosted solution to be install free
+- 4 algorithms - top-down, left-right, diagonal, alt-diagonal
 - 5 CSS variable formats - JSON, SASS, SCSS, LESS, Stylus
 - 1 project written on top of spritesmith by another person
 
