@@ -1,6 +1,6 @@
 Title slide
 - Spritesmith
-- Include link to slides, github, and twitter [todo: github link]
+- Include link to slides, github, and twitter
 
 What is a sprite?
 - Show nyan cat. If you are familiar with this, disregard it.
