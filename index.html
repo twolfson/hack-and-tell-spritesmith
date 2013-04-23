@@ -120,10 +120,24 @@
 				</section>
 
 				<section>
-					<h2>Point of View</h2>
+					<h2>Approach</h2>
 					<p>
-						Press <strong>ESC</strong> to enter the slide overview. Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+						During my initial research, I found two node modules which would suit my needs:
 					</p>
+					<ul>
+						<li><a href="https://github.com/aheckmann/gm">gm</a>, a wrapper for <a href="http://www.graphicsmagick.org/">GraphicsMagick</a></li>
+						<li><a href="https://github.com/LearnBoost/node-canvas">node-canvas</a>, a node.js implementation of <a href="https://developer.mozilla.org/en-US/docs/HTML/Canvas">&lt;canvas&gt;</a> which utilizes <a href="http://cairographics.org/">Cairo</a>
+					</ul>
+					<p>
+						<img src="img/graphics_magick.png" alt="GraphicsMagick logo"/>
+						<img src="img/cairo.png" alt="Cairo logo"/>
+					</p>
+
+					<aside class="notes">
+						`gm` would handle Windows as it available as an `.exe`.
+						<br/>
+						`node-canvas` would handle Unix as it compiles when installed via `npm`.
+					</aside>
 				</section>
 
 				<section>
